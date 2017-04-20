@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gotham-Bold.otf">
+            <string>Gotham-Bold</string>
+        </array>
+        <array key="Gotham-Book.otf">
+            <string>Gotham-Book</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ItemCardView" customModule="CollegeHub" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cK5-Wm-R2T">
+                    <rect key="frame" x="16" y="16" width="359" height="333"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="okv-ab-sAV">
+                            <rect key="frame" x="0.0" y="0.0" width="343" height="103.5"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BRE-Sr-rxS">
+                                    <rect key="frame" x="0.0" y="0.0" width="103.5" height="103.5"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="BRE-Sr-rxS" secondAttribute="height" multiplier="1:1" id="B6c-Ft-NEa"/>
+                                    </constraints>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Yub-D5-zBf">
+                                    <rect key="frame" x="119.5" y="0.0" width="104" height="103.5"/>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o8M-IT-mR5">
+                                    <rect key="frame" x="239.5" y="0.0" width="103.5" height="103.5"/>
+                                </imageView>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="IOY-Wc-raR">
+                            <rect key="frame" x="0.0" y="123.5" width="359" height="209.5"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="N20-V5-3X4">
+                                    <rect key="frame" x="0.0" y="0.0" width="359" height="43.5"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="uhR-gT-gkF">
+                                            <rect key="frame" x="0.0" y="0.0" width="359" height="24"/>
+                                            <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham" pointSize="24"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Dk-oz-goA">
+                                            <rect key="frame" x="0.0" y="29" width="359" height="14.5"/>
+                                            <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="14"/>
+                                            <color key="textColor" red="0.12941176470588234" green="0.12941176470588234" blue="0.12941176470588234" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="5Dk-oz-goA" firstAttribute="width" secondItem="N20-V5-3X4" secondAttribute="width" id="LIK-dr-Yj6"/>
+                                        <constraint firstItem="uhR-gT-gkF" firstAttribute="width" secondItem="N20-V5-3X4" secondAttribute="width" id="dLC-Wj-5BX"/>
+                                    </constraints>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Xtz-y0-5Ec">
+                                    <rect key="frame" x="0.0" y="59.5" width="359" height="84"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="Ye1-qe-0qI">
+                                            <rect key="frame" x="0.0" y="0.0" width="359" height="40"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SsA-Th-Sj1">
+                                                    <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="BFH-2o-dKN"/>
+                                                        <constraint firstAttribute="width" constant="40" id="v7T-n8-NgJ"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="fSm-4r-lRk">
+                                                    <rect key="frame" x="47" y="0.0" width="210" height="40"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v8Q-Br-fkw">
+                                                            <rect key="frame" x="0.0" y="0.0" width="210" height="21.5"/>
+                                                            <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="12"/>
+                                                            <color key="textColor" red="0.61960784313725492" green="0.61960784313725492" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2sU-m7-uCN">
+                                                            <rect key="frame" x="0.0" y="25.5" width="210" height="14.5"/>
+                                                            <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham" pointSize="14"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$120" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="s6K-YP-lfJ">
+                                                    <rect key="frame" x="264" y="0.0" width="95" height="40"/>
+                                                    <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="95" id="2yg-CD-mi4"/>
+                                                        <constraint firstAttribute="height" constant="40" id="EIJ-xr-uAk"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham" pointSize="18"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabel" lineBreakMode="tailTruncation" numberOfLines="4" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0nG-U9-Kkj">
+                                            <rect key="frame" x="0.0" y="60" width="343" height="24"/>
+                                            <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="0nG-U9-Kkj" secondAttribute="trailing" constant="16" id="KwR-W1-TbK"/>
+                                        <constraint firstItem="Ye1-qe-0qI" firstAttribute="width" secondItem="Xtz-y0-5Ec" secondAttribute="width" id="byq-le-UDn"/>
+                                    </constraints>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="IEi-oe-xov">
+                                    <rect key="frame" x="0.0" y="159.5" width="343" height="50"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="lgb-ky-EKO">
+                                            <rect key="frame" x="0.0" y="0.0" width="166.5" height="50"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hZt-Ot-wtA">
+                                                    <rect key="frame" x="0.0" y="0.0" width="166.5" height="31.5"/>
+                                                    <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="12"/>
+                                                    <color key="textColor" red="0.61960784310000006" green="0.61960784310000006" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Pe-uV-LBi">
+                                                    <rect key="frame" x="0.0" y="35.5" width="166.5" height="14.5"/>
+                                                    <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="g5k-ii-xkY">
+                                            <rect key="frame" x="176.5" y="0.0" width="166.5" height="50"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9zJ-g2-y3N">
+                                                    <rect key="frame" x="0.0" y="0.0" width="1" height="50"/>
+                                                    <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="1" id="WFA-8I-H36"/>
+                                                    </constraints>
+                                                </view>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="w4T-jQ-FQo">
+                                                    <rect key="frame" x="15" y="0.0" width="151.5" height="50"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W9t-kr-geX">
+                                                            <rect key="frame" x="0.0" y="0.0" width="151.5" height="31.5"/>
+                                                            <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="12"/>
+                                                            <color key="textColor" red="0.61960784310000006" green="0.61960784310000006" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8tk-X4-B7F">
+                                                            <rect key="frame" x="0.0" y="35.5" width="151.5" height="14.5"/>
+                                                            <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham" pointSize="14"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="N20-V5-3X4" firstAttribute="width" secondItem="IOY-Wc-raR" secondAttribute="width" id="JwT-8H-dWj"/>
+                                <constraint firstAttribute="trailing" secondItem="IEi-oe-xov" secondAttribute="trailing" constant="16" id="nmX-Rc-SHK"/>
+                                <constraint firstItem="Xtz-y0-5Ec" firstAttribute="width" secondItem="IOY-Wc-raR" secondAttribute="width" id="zXY-bN-R2a"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="okv-ab-sAV" secondAttribute="trailing" constant="16" id="FTU-k0-aFn"/>
+                        <constraint firstItem="IOY-Wc-raR" firstAttribute="width" secondItem="cK5-Wm-R2T" secondAttribute="width" id="v9J-Em-tcN"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="cK5-Wm-R2T" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="C9U-BN-98w"/>
+                <constraint firstItem="cK5-Wm-R2T" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="QYq-Fg-ao2"/>
+                <constraint firstAttribute="trailing" secondItem="cK5-Wm-R2T" secondAttribute="trailing" id="pcs-9f-8mI"/>
+            </constraints>
+            <connections>
+                <outlet property="imgView" destination="SsA-Th-Sj1" id="3hQ-NU-Aiw"/>
+                <outlet property="imgViewCenter" destination="Yub-D5-zBf" id="nMB-pH-cnt"/>
+                <outlet property="imgViewRight" destination="o8M-IT-mR5" id="Gdl-Ef-7Hf"/>
+                <outlet property="imgViewleft" destination="BRE-Sr-rxS" id="g6D-km-htT"/>
+                <outlet property="lblCondition" destination="W9t-kr-geX" id="5zJ-fL-e0J"/>
+                <outlet property="lblConditionValue" destination="8tk-X4-B7F" id="BsI-dV-CQu"/>
+                <outlet property="lblEdition" destination="hZt-Ot-wtA" id="Kdp-35-2ef"/>
+                <outlet property="lblEditionValue" destination="7Pe-uV-LBi" id="wkK-Qt-0FO"/>
+                <outlet property="lblItemDescription" destination="0nG-U9-Kkj" id="7bF-m8-kHP"/>
+                <outlet property="lblItemSubTitle" destination="5Dk-oz-goA" id="zyJ-qS-YyQ"/>
+                <outlet property="lblItemTitle" destination="uhR-gT-gkF" id="W4Y-Up-SBx"/>
+                <outlet property="lblOwner" destination="v8Q-Br-fkw" id="5Hg-14-hoL"/>
+                <outlet property="lblOwnerName" destination="2sU-m7-uCN" id="8ZD-w8-QCS"/>
+                <outlet property="lblPrice" destination="s6K-YP-lfJ" id="X9G-Hh-41y"/>
+                <outlet property="stackViewBottom" destination="IEi-oe-xov" id="4la-c6-nbX"/>
+            </connections>
+            <point key="canvasLocation" x="-1008" y="-1245"/>
+        </view>
+    </objects>
+</document>
